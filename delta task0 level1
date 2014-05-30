@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+@-webkit-keyframes circle
+ { 
+from
+ { -webkit-transform:rotate(0deg) } 
+to 
+{ -webkit-transform:rotate(360deg) } 
+}
+
+@keyframes circle
+ { 
+from
+ { transform:rotate(0deg) } 
+to 
+{ transform:rotate(360deg) } 
+}
+</style>
+<body>
+<div  style="width:100px;height:100px;position:absolute;top:50px;left:50px;
+     animation-name:circle;
+     animation-iteration-count:infinite;
+     animation-timing-function:linear;
+     animation-duration:1s;
+    -webkit-animation-name:circle;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-duration:1s;">
+
+<div style="position:absolute;
+    top:0;
+    left:0;
+    width:30px;
+    height:30px;
+    background:black;
+    border-radius:50%;
+    "></div>
+</div>
+
+</body>
+</html>
