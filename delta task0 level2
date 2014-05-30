@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+div
+{
+width:25px;
+height:25px;
+background:black;
+border-radius:60%;
+position:relative;
+animation:mymove 3s infinite linear;
+
+/*Safari, Chrome, and Opera*/
+-webkit-animation:mymove 3s infinite;
+}
+
+@keyframes mymove
+{
+0%{ transform:translate(0px,0px);} 
+25%{ transform:translate(100px,0px);} 
+50%{ transform:translate(100px,100px);}
+75%{ transform:translate(0px,100px);} 
+100%{ transform:translate(0px,0px);} 
+}
+
+/*Safari, Chrome, and Opera*/
+@-webkit-keyframes mymove
+{
+0%{ -webkit-transform:translate(0px,0px);} 
+25%{ -webkit-transform:translate(100px,0px);} 
+50%{ -webkit-transform:translate(100px,100px);}
+75%{ -webkit-transform:translate(0px,100px);} 
+100%{ -webkit-transform:translate(0px,0px);} 
+}
+</style>
+
+</head>
+<body>
+
+<p>Duration:
+
+<button onclick="myFunction1()">1s</button>
+<button onclick="myFunction2()">2s</button>
+<button onclick="myFunction3()">3s</button>
+<button onclick="myFunction4()">4s</button>
+<button onclick="myFunction5()">5s</button></p>
+
+<script>
+function myFunction1()
+{
+document.getElementById("myDIV").style.animationDuration = "1s";
+// Code for Chrome, Safari, and Opera
+document.getElementById("myDIV").style.WebkitAnimationDuration = "1s";
+}
+function myFunction2()
+{
+document.getElementById("myDIV").style.animationDuration = "2s";
+// Code for Chrome, Safari, and Opera
+document.getElementById("myDIV").style.WebkitAnimationDuration = "2s";
+}
+function myFunction3()
+{
+document.getElementById("myDIV").style.animationDuration = "3s";
+// Code for Chrome, Safari, and Opera
+document.getElementById("myDIV").style.WebkitAnimationDuration = "3s";
+}
+function myFunction4()
+{
+document.getElementById("myDIV").style.animationDuration = "4s";
+// Code for Chrome, Safari, and Opera
+document.getElementById("myDIV").style.WebkitAnimationDuration = "4s";
+}
+function myFunction5()
+{
+document.getElementById("myDIV").style.animationDuration = "5s";
+// Code for Chrome, Safari, and Opera
+document.getElementById("myDIV").style.WebkitAnimationDuration = "5s";
+}
+</script>
+
+<p>Note:Only supported in Firefox.</p>
+
+<div id="myDIV"></div>
+
+</body>
+</html>
